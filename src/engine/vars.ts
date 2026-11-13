@@ -1,0 +1,9 @@
+// Every ink VAR the engine reads (HUD, minigames, saves). Kept in step with story/main.ink by the walker test.
+export const VAR_NAMES = [
+  'CHAPTER', 'POWER', 'POWER_REFILL', 'AIR', 'SHIELD', 'FOOD', 'SCIENCE', 'BATTERY', 'DOSE', 'CAREER',
+  'TRUST_AMARA', 'TRUST_LUCIA', 'TRUST_SIONE', 'IGNORED', 'WARN', 'STORM', 'STORM_CH4', 'DRILL',
+  'SHIELD_AT_STORM', 'HARVEST', 'SWAP_TIME', 'SWAP_OK', 'SWAP_FAILED', 'CHOSE_C', 'OUTBOUND_COST',
+  'SHADOW_TILES', 'SAMPLE', 'DRILL_LATE', 'TURN_COST', 'TRIAGE_WRONG', 'OUTSIDE', 'LAST_PICK',
+  'SHIELD_LINE', 'D8_CLASS', 'D8_SOURCE', 'D8_FETCHED', 'BUDGET_AIR', 'BUDGET_SHIELD', 'BUDGET_LAUNCH',
+  'SOUVENIR_B', 'LAST_WORDS', 'PICKED_ML3', 'PICKED_ML6',
+] as const;

@@ -1,0 +1,23 @@
+{
+  "D1": { "label": "SPACE WEATHER · ARCHIVED", "source": "NASA DONKI", "url": "https://ccmc.gsfc.nasa.gov/tools/DONKI" },
+  "D2": { "label": "RADIATION LIMITS", "source": "NASA OCHMO radiation brief", "url": "https://www.nasa.gov/wp-content/uploads/2023/03/radiation-protection-technical-brief-ochmo.pdf" },
+  "D3": { "label": "AIR LIMITS", "source": "NASA OCHMO CO2 brief", "url": "https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-004-carbon-dioxide.pdf" },
+  "D4": { "label": "PLANTS IN SPACE · ARCHIVED", "source": "NASA OSDR", "url": "https://osdr.nasa.gov" },
+  "D5": { "label": "SHACKLETON · ARCHIVED", "source": "NASA LRO (LROC, Diviner)", "url": "https://www.lroc.asu.edu/images/1105" },
+  "D6": { "label": "LUNAR DUST · ARCHIVED", "source": "NASA Apollo mission records" },
+  "D7": { "label": "SPACE WEATHER · ARCHIVED", "source": "NASA DONKI", "url": "https://ccmc.gsfc.nasa.gov/tools/DONKI" },
+  "D8": { "label": "SPACE WEATHER · LIVE", "source": "NASA DONKI", "url": "https://ccmc.gsfc.nasa.gov/tools/DONKI" },
+  "ML1": { "label": "Apollo 12, 1969", "source": "History Echo" },
+  "ML2": { "label": "Apollo 13, 1970", "source": "History Echo" },
+  "ML3": { "label": "Skylab 4, 1973–74", "source": "History Echo" },
+  "ML4": { "label": "Apollo 11, 1969", "source": "History Echo" },
+  "ML5": { "label": "Soyuz 5, 1969", "source": "History Echo" },
+  "ML6": { "label": "Gemini 8, 1966", "source": "History Echo" },
+  "ML7": { "label": "STS-126, 2008", "source": "History Echo" },
+  "ML8": { "label": "Mir, 1997", "source": "History Echo" },
+  "ML9": { "label": "Apollo 15, 1971", "source": "History Echo" },
+  "ML10": { "label": "Apollo 13, 1968–70", "source": "History Echo" },
+  "ML11": { "label": "Coming home", "source": "History Echo" },
+  "NWS": { "label": "Space storm types", "source": "US National Weather Service", "url": "https://www.weather.gov/safety/space-storm-types", "note": "Particles from a solar storm can arrive within an hour, long before the cloud (CME) does." },
+  "COMMS": { "label": "Lunar communications architecture", "source": "NASA", "url": "https://www.nasa.gov/wp-content/uploads/2024/01/lunar-communications-and-navigation-architecture.pdf", "note": "From the lunar south pole, Earth is visible only about half of each month." }
+}

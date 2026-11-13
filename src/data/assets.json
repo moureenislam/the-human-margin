@@ -1,0 +1,32 @@
+{
+  "bg": {
+    "BG01": { "file": "assets/bg/bg01_bedroom.png", "name": "Bedroom on Earth, night" },
+    "BG02": { "file": "assets/bg/bg02_outpost.png", "name": "Outpost, day" },
+    "BG03": { "file": "assets/bg/bg03_habitat.png", "name": "Habitat, normal" },
+    "BG03R": { "file": "assets/bg/bg03r_habitat_red.png", "name": "Habitat, red alert" },
+    "BG04": { "file": "assets/bg/bg04_greenhouse.png", "name": "Lab and greenhouse" },
+    "BG05": { "file": "assets/bg/bg05_crater_rover.png", "name": "Crater, Earth above the rim", "smooth": true },
+    "BG06": { "file": "assets/bg/bg06_crater_floor.png", "name": "Shadowed crater floor" },
+    "BG08": { "file": "assets/bg/bg08_review_room.png", "name": "Review room" },
+    "BG09": { "file": "assets/bg/bg09_orbit.png", "name": "Orbit" }
+  },
+  "sprites": {
+    "AMA-N": "ama_n", "AMA-C": "ama_n", "AMA-D": "ama_n", "AMA-S": "ama_s", "AMA-H": "ama_h",
+    "LUC-N": "luc_n", "LUC-C": "luc_c", "LUC-D": "luc_c", "LUC-H": "luc_h",
+    "SIO-N": "sio_n", "SIO-S": "sio_s", "SIO-C": "sio_c", "SIO-H": "sio_h"
+  },
+  "spriteFiles": {
+    "ama_n": { "file": "assets/sprites/ama_n.png", "who": "AMARA", "suit": false },
+    "ama_s": { "file": "assets/sprites/ama_s.png", "who": "AMARA", "suit": false },
+    "ama_h": { "file": "assets/sprites/ama_h.png", "who": "AMARA", "suit": true },
+    "luc_n": { "file": "assets/sprites/luc_n.png", "who": "LUCIA", "suit": false },
+    "luc_c": { "file": "assets/sprites/luc_c.png", "who": "LUCIA", "suit": false },
+    "luc_h": { "file": "assets/sprites/luc_h.png", "who": "LUCIA", "suit": true },
+    "sio_n": { "file": "assets/sprites/sio_n.png", "who": "SIONE", "suit": false },
+    "sio_s": { "file": "assets/sprites/sio_s.png", "who": "SIONE", "suit": false },
+    "sio_c": { "file": "assets/sprites/sio_c.png", "who": "SIONE", "suit": false },
+    "sio_h": { "file": "assets/sprites/sio_h.png", "who": "SIONE", "suit": true }
+  },
+  "headCrop": { "x": 140, "y": 10, "w": 280, "h": 280 },
+  "figurine": { "x": 1680, "y": 385, "w": 70, "h": 145 }
+}
