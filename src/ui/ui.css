@@ -33,14 +33,14 @@
 .sprite.dim { filter: brightness(0.7) saturate(0.85); }
 .reduce-motion .sprite { animation: none; }
 
-/* ---------- Radio insets: (48,120) and (48,380), 240×240 ---------- */
-.inset { position: absolute; left: 48px; width: 240px; height: 272px; }
-.inset .headcrop { width: 240px; height: 240px; }
+/* ---------- Radio insets: below the HUD (it can wrap to 3 rows), 200×200 ---------- */
+.inset { position: absolute; left: 48px; width: 208px; height: 236px; }
+.inset .headcrop { width: 200px; height: 200px; }
 .inset .scan {
-  position: absolute; left: 0; top: 0; width: 240px; height: 240px; pointer-events: none;
+  position: absolute; left: 0; top: 0; width: 200px; height: 200px; pointer-events: none;
   background: repeating-linear-gradient(0deg, rgba(11, 15, 26, 0.35) 0 4px, transparent 4px 8px);
 }
-.inset .cap { position: absolute; left: 0; right: 0; bottom: 0; height: 32px; text-align: center; font-family: var(--font-label); font-size: 24px; color: var(--cyan); background: var(--ink); }
+.inset .cap { position: absolute; left: 0; right: 0; bottom: 0; height: 28px; line-height: 28px; text-align: center; font-family: var(--font-label); font-size: 24px; color: var(--cyan); background: var(--ink); }
 .inset.speaking { border-color: var(--gold); }
 
 /* ---------- HUD: top left, inside x 24–728 ---------- */

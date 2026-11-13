@@ -20,23 +20,22 @@ For `npm run e2e` with Chrome instead of Edge: `PW_CHANNEL=chrome npm run e2e`.
 
 To ship: copy `dist/` (the HTML file plus `dist/assets/`) to GitHub Pages or itch.io.
 
-## Art (needed before release)
+## Art
 
-The art from `human_margin_assets.zip` is **not in this repo yet**. Until it is, the game draws
-pixel placeholders (labelled with their code) so everything is playable. Drop the files in with
-exactly these names and they're used automatically:
+All 9 backgrounds and 10 sprites are in `public/assets/`, renamed as in guide section 3, with the
+section 3.4 fixes applied:
 
-```
-public/assets/bg/       bg01_bedroom.png  bg02_outpost.png  bg03_habitat.png  bg03r_habitat_red.png
-                        bg04_greenhouse.png  bg05_crater_rover.png  bg06_crater_floor.png
-                        bg08_review_room.png  bg09_orbit.png                      (1920×1080)
-public/assets/sprites/  ama_n.png ama_s.png ama_h.png luc_n.png luc_c.png luc_h.png
-                        sio_n.png sio_s.png sio_c.png sio_h.png                   (540×909)
-```
+- `ama_s`, `ama_h`: white box and the 12-pixel grey stripe removed by flooding from the edges only.
+- `bg01_bedroom`: see-through gaps filled with the darkest navy around them, (4, 5, 17).
+- `sio_s`: skin colours only toned to match his other sprites (saturation ×0.86, brightness ×0.88).
+- `sio_n`: padded from 902 to 909 pixels tall (at the top, so his feet stay put).
+- `bg05_crater_rover`: scaled smoothly from 1672×941 to 1920×1080.
 
-After adding them, check two numbers in `src/data/assets.json` against the real art:
-`headCrop` (the face area used for radio insets and Shelter Drill portraits) and `figurine` (the
-Prologue zoom). `node scripts/shoot-minigames.mjs <folder>` screenshots every minigame scene.
+If an image goes missing, the game draws a labelled placeholder instead of breaking.
+`node scripts/shoot-minigames.mjs <folder>` screenshots every minigame scene.
+
+Layout change from guide 4.2: the radio insets are 200×200 at (48, 256) and (48, 516), below the
+HUD, because the HUD wraps to a third row in Chapter 3 and covered an inset at (48, 120).
 
 ## NASA API key (card D8)
 
@@ -120,3 +119,4 @@ trigger either (AIR never drops below 45 there).
    and "the magnetic field and the air stop its particles" (1.1, Storm Return debrief, LE1 lesson).
 5. Design-choice numbers are listed on the in-game credits screen.
 6. Credits screen: replace "The Human Margin art team" with the artists' names.
+7. Optional art from guide 3.5: the crater image on the 8-pixel grid, and a concerned pose for Amara.

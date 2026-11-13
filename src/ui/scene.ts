@@ -81,15 +81,15 @@ export class SceneView {
     this.insetEls = codes.slice(0, 2).map((code, i) => {
       const el = document.createElement('div');
       el.className = 'inset px solid cyan';
-      el.style.top = (i === 0 ? 120 : 380) + 'px';
+      el.style.top = (i === 0 ? 256 : 516) + 'px';
       el.dataset.who = spriteWho(code);
-      el.appendChild(headCrop(code, 240));
+      el.appendChild(headCrop(code, 200));
       const scan = document.createElement('div');
       scan.className = 'scan';
       el.appendChild(scan);
       const cap = document.createElement('div');
       cap.className = 'cap';
-      cap.textContent = spriteWho(code) + ' · RADIO';
+      cap.textContent = spriteWho(code);
       el.appendChild(cap);
       this.refs.layer.insets.appendChild(el);
       return { code, el };
