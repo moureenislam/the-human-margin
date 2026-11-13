@@ -163,3 +163,13 @@ button { font: inherit; color: inherit; }
   width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
+
+/* Smaller than 1 art pixel per device pixel: scale smoothly so outlines stay whole
+   (drawn placeholders are tiny and stay pixelated). */
+.downscaled .pixelated,
+.downscaled .headcrop img {
+  image-rendering: auto;
+}
+.downscaled img.ph {
+  image-rendering: pixelated;
+}

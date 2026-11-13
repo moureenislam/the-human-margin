@@ -36,12 +36,14 @@ const failed = new Set<string>();
 /** Sets img.src to the file, swapping to a drawn placeholder if it fails to load. */
 function loadInto(img: HTMLImageElement, file: string, fallback: () => string) {
   if (failed.has(file)) {
+    img.classList.add('ph');
     img.src = fallback();
     return;
   }
   img.onerror = () => {
     failed.add(file);
     img.onerror = null;
+    img.classList.add('ph');
     img.src = fallback();
   };
   img.src = file;
